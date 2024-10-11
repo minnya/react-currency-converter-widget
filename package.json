@@ -1,6 +1,6 @@
 {
   "name": "react-currency-converter-widget",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "description": "This npm package is a UI component for currency conversion in React using TypeScript. It is built with Material-UI, ensuring high compatibility with applications that also use Material-UI.",
   "private": false,
   "main": "dist/index.js",

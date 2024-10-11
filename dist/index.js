@@ -19,11 +19,11 @@ const react_1 = require("react");
 const icons_material_1 = require("@mui/icons-material");
 const currency_converter_1 = __importDefault(require("@m00nbyte/currency-converter"));
 const react_2 = __importDefault(require("react"));
-const CurrencyConverter = () => {
+const CurrencyConverter = ({ defaultFromCurrency, defaultToCurrency, }) => {
     const [fromAmount, setFromAmount] = (0, react_1.useState)(1.0);
-    const [fromCurrency, setFromCurrency] = (0, react_1.useState)("USD");
+    const [fromCurrency, setFromCurrency] = (0, react_1.useState)(defaultFromCurrency);
     const [toAmount, setToAmount] = (0, react_1.useState)(0);
-    const [toCurrency, setToCurrency] = (0, react_1.useState)("JPY");
+    const [toCurrency, setToCurrency] = (0, react_1.useState)(defaultToCurrency);
     const [currencyList, setCurrencyList] = (0, react_1.useState)([]);
     const [rate, setRate] = (0, react_1.useState)(0);
     const [lastUpdated, setLastUpdated] = (0, react_1.useState)(new Date());
