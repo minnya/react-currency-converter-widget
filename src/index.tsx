@@ -16,14 +16,18 @@ import {
   import React from "react";
   
   interface CurrencyConverterProps {
-    
+    defaultFromCurrency: string,
+    defaultToCurrency: string
   }
   
-  export const CurrencyConverter: React.FC<CurrencyConverterProps> = () => {
+  export const CurrencyConverter: React.FC<CurrencyConverterProps> = ({
+    defaultFromCurrency,
+    defaultToCurrency,
+  }) => {
     const [fromAmount, setFromAmount] = useState(1.0);
-    const [fromCurrency, setFromCurrency] = useState<string>("USD");
+    const [fromCurrency, setFromCurrency] = useState<string>(defaultFromCurrency);
     const [toAmount, setToAmount] = useState<number>(0);
-    const [toCurrency, setToCurrency] = useState<string>("JPY");
+    const [toCurrency, setToCurrency] = useState<string>(defaultToCurrency);
     const [currencyList, setCurrencyList] = useState<string[]>([]);
     const [rate, setRate] = useState(0);
     const [lastUpdated, setLastUpdated] = useState<Date>(new Date());
