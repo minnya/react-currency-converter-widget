@@ -29,10 +29,10 @@ render() {
 
 # Props
 
-### initialFromCurrency: [ string ]
+### defaultFromCurrency: [ string ]
 
-Initial From Currency (ex: `USD`)
+default From Currency (ex: `USD`)
 
-### initialToCurrency: [ string ]
+### defaultToCurrency: [ string ]
 
-Initial To Currency (ex: `JPY`)
+default To Currency (ex: `JPY`)
